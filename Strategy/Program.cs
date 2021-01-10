@@ -1,4 +1,6 @@
 ﻿using System;
+using Characters;
+using Weapons;
 
 namespace Strategy
 {
@@ -6,7 +8,15 @@ namespace Strategy
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var k = new Knight();
+            k.fight();
+            k.setWeapon(new BowBehavior());
+            k.fight();
+            k.setWeapon(new KnifeBehavior());
+            k.fight();
+            k.setWeapon(new MageStaff());
+            k.fight();
         }
     }
+
 }
