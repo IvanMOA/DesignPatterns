@@ -1,2 +1,3 @@
-/**/bin
-/**/obj
+/Adapter/**/bin
+/Strategy/**/bin
+/**/obj 
